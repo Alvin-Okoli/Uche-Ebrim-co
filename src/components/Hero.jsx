@@ -2,7 +2,7 @@
 
 function Hero() {
   return (
-    <div className="relative h-160 pt-32 mb-10 text-center text-white rounded-bl-[100px] bg-[url(ed052804-29d3-4800-91a6-471b486808ed.jpeg)] bg-cover bg-center">
+    <div className="relative h-160 pt-32 mt-28 mb-10 text-center text-white rounded-bl-[100px] bg-[url(/ed052804-29d3-4800-91a6-471b486808ed.jpeg)] bg-cover bg-center">
 
         <div className=" absolute inset-0 top-0 h-160 bg-black/50  rounded-bl-[100px]"></div>
 
