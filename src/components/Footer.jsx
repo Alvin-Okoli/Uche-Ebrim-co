@@ -85,11 +85,11 @@ function Footer() {
 
       <div className="flex justify-between mb-6">
         {footerOption.map((foot, index)=>(
-        <div className="px-2 my-2">
-          <div key={index} className="text-xl font-semibold my-2">{foot.title}</div>
+        <div key={index} className="px-2 my-2">
+          <div className="text-xl font-semibold my-2">{foot.title}</div>
 
-          {foot.options.map((option, index)=>(
-            <div key={index} className="font-light my-1">{option.title}</div>
+          {foot.options.map((option, i)=>(
+            <div key={i} className="font-light my-1">{option.title}</div>
             ))}
         </div>
         ))}
