@@ -10,9 +10,9 @@ function Nav({scrolltoHeroRef, scrolltoAboutRef, scrolltoPracticeRef, scrolltoCo
 
     return(
 
-        <div className="bg-amber-950 text-white w-full h-30 fixed top-0 z-40">
+        <div className="bg-amber-950 text-white w-full h-30 z-20">
             <div className="flex justify-between py-8 px-4 shadow relative">
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 cursor-pointer">
                 <img src="law-auction-svgrepo-com.svg" alt="chamber" width={44} onClick={toggleMenu} className="inline-block"/> <span className="text-3xl font-serif">Uche Ebrim & co</span>         
             </div>
             <img src={show? 'cancel-whitesvgrepo-com.svg' :  'whiteburger-menu-svgrepo-com.svg'} alt="menu" width={44} onClick={toggleMenu}/>
