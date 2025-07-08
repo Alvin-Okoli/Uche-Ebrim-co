@@ -7,19 +7,15 @@ const footerOption = [
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
       {
+        title: 'Our Team',
+        info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
+      },
+      {
         title: 'Blog',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
       {
-        title: 'Careers',
-        info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
-      },
-      {
-        title: 'Jobs',
-        info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
-      },
-      {
-        title: 'In Press',
+        title: 'Practice Areas',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       }
     ]
@@ -28,11 +24,7 @@ const footerOption = [
     title: 'Support',
     options: [
       {
-        title: 'Contact us',
-        info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
-      },
-      {
-        title: 'Online Chat',
+        title: 'Book a Consultation',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
       {
@@ -44,32 +36,28 @@ const footerOption = [
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
       {
-        title: 'Ticketing',
+        title: 'Live Chat',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
     ]
   },
   {
-    title: 'FAQ',
+    title: 'Resources',
     options: [
       {
-        title: 'Account',
+        title: 'FAQ',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
       {
-        title: 'Management',
+        title: 'Privacy Policy',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
       {
-        title: 'Orders',
+        title: 'Terms of Service',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       },
       {
-        title: 'Payments',
-        info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
-      },
-      {
-        title: 'Returns',
+        title: 'Case Results',
         info: 'loreHabitant sed a, vestibulum feugiat mauris. Odio mi sed amet, egestas suspendisse nunc, sit risus. Viverra commodo duis eu, ac. Tempus, senectus magnis orci enim posuere. Id consectetur id consectetur scelerisque interdum maecenas nunc nunc, tellus.'
       }
     ]
@@ -95,8 +83,13 @@ function Footer() {
         ))}
       </div>
 
-      <div className="text-center mt-4 pb-2">
-        <p>&copy; {new Date().getFullYear()} My Website. All rights reserved.</p>
+      <div className="mt-4 pb-2 px-2 text-lg">
+        <p>Uche Ebrim & Co</p>
+        <p>23 Law Street, Nnewi, Anambra, Nigeria</p>
+        <p>+234 801 000 0000</p>
+        <p>info@ucheebrimco.com</p>
+
+        <p className="mt-4 text-sm text-center">&copy; {new Date().getFullYear()} My Website. All rights reserved.</p>
       </div>
     </footer>
   );
