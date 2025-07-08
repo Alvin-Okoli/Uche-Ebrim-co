@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const services = [
   {
@@ -43,6 +43,14 @@ function Practice() {
   const [serviceInfo, setServiceInfo] = useState('')
   const [title, setTitle] = useState('')
   const [showInfo, setShowInfo] = useState(false)
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setClicked(false);
+    }, 3000);
+  },[clicked])
+
 
   const showServiceInfo = (service)=>{
     setServiceInfo(service.info)
@@ -71,7 +79,8 @@ function Practice() {
         </div>
       </div>
 
-      <div className="text-center underline p-2">VIEW ALL</div>
+      <div className="text-center underline p-2"></div>
+      <div className={` border-2 ${clicked? 'border-white bg-amber-950':'border-amber-950'} ${clicked? 'text-white':'text-amber-950'} font-bold py-2 my-8 w-4/6 text-center mx-auto`} onClick={()=>setClicked(true)}>VIEW ALL</div>
 
       {showInfo&&
         <div className="bg-white fixed overflow-scroll max-h-screen w-full top-0 z-30 pt-10 px-3">
